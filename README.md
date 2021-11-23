@@ -22,6 +22,10 @@
 <h1>¿Que es necesario para iniciar el challenge?</h1>
 <p>
   Es necesario crear un <b>.env</b> con el nombre de <b>REACT_APP_ENDPOINT_URL</b> y asignar la url de la api, que en este caso es <b>https://my-json-server.typicode.com/improvein/dev-challenge</b>
+  <br></br>
+  El email y contraseña estan escritos a manos con un <b>setLocalStorage<b> fake, ya que no utilice una api para el mismo. Para poder ingresar <br></br>
+  <b>EMAIL: challengereact@nubceo.com</b><br></br>
+  <b>PASSWORD: react1234</b>
 </p>
 <h1>¿Porqué tan pocos estilos?</h1>
 <p>

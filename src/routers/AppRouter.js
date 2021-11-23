@@ -13,6 +13,7 @@ export const AppRouter = () => {
       <Routes>
 
         <Route path="/login" element={<LoginScreen />} />
+
         <Route path="/" element={<PrivateRoute />}>
           <Route path="/" element={<BandsScreen />} />
           <Route path="/artist" element={<ArtistDetailScreen />} />
@@ -21,6 +22,7 @@ export const AppRouter = () => {
         </Route>
 
         <Route path="*" element={<Navigate to ="/" />}/>
+        
       </Routes>
     </BrowserRouter>
   )

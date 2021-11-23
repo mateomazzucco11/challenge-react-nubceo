@@ -1,7 +1,7 @@
-import { Navigate } from "react-router";
+import { Navigate, Outlet } from "react-router";
 import { useAuth } from "../utils/useAuth";
 
-export default function PrivateRoute({ children }) {
+export default function PrivateRoute() {
   const auth = useAuth();
-  return auth ? children : <Navigate to="/login" />;
+  return auth ? <Outlet /> : <Navigate to="/login" />;
 }

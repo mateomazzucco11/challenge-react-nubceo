@@ -5,13 +5,9 @@ import { LoginScreen } from '../pages/auth/LoginScreen';
 import { ArtistDetailScreen } from '../pages/screens/ArtistDetailScreen';
 import { BandsScreen } from '../pages/screens/BandsScreen';
 
-import { useAuth } from '../utils/useAuth';
-
 import PrivateRoute from './PrivateRoute';
 
 export const AppRouter = () => {
-  const auth = useAuth()
-  console.log(auth)
   return (
     <BrowserRouter>
       <Routes>

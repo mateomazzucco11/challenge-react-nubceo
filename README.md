@@ -21,7 +21,7 @@
 
 <h1>¿Que es necesario para iniciar el challenge?</h1>
 <p>
-  Es necesario crear un <br>.env</br> con el nombre de <br>REACT_APP_ENDPOINT_URL</br> y asignar la url de la api, que en este caso es <br>https://my-json-server.typicode.com/improvein/dev-challenge</br>
+  Es necesario crear un <b>.env</b> con el nombre de <b>REACT_APP_ENDPOINT_URL</b> y asignar la url de la api, que en este caso es <b>https://my-json-server.typicode.com/improvein/dev-challenge</b>
 </p>
 <h1>¿Porqué tan pocos estilos?</h1>
 <p>

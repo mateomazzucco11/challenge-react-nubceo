@@ -1,15 +1,19 @@
-import Button from '@restart/ui/esm/Button'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+
 import { Card } from 'react-bootstrap'
+
+import Button from '@restart/ui/esm/Button'
 
 export const CardBands = ({data, genre, albums}) => {
   const navigate = useNavigate();
+
   const FilterForChangeGenderName = genre.filter(element => data.genreCode === element.code)
-  
   const FilterForArtistAlbums = albums.filter(element => data.id === element.bandId)
+
   let genredName;
   let albumsFilters;
+
   if (FilterForChangeGenderName.length === 1){
     genredName = FilterForChangeGenderName[0].name
   }
@@ -21,7 +25,6 @@ export const CardBands = ({data, genre, albums}) => {
   }
 
   return (
-    
       <Card className="text-center ">
         <Card.Header>{data.name}</Card.Header>
         <Card.Body>

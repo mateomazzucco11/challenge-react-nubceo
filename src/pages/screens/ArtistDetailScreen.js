@@ -1,13 +1,17 @@
 import React, { useEffect } from 'react'
-import { Col, Row } from 'react-bootstrap';
 import { useLocation, useNavigate } from 'react-router';
+
+import { Col, Row } from 'react-bootstrap';
 
 export const ArtistDetailScreen = (props) => {
   const navigate = useNavigate()
+
   const { state } = useLocation();
+
   let artist;
   let genre;
   let albums;
+
   useEffect(() => {
     if (state === null) {
       navigate('/hola')
@@ -19,6 +23,7 @@ export const ArtistDetailScreen = (props) => {
     genre = state[1]
     albums = state[2]
   }
+
   return (
     <Row className="d-flex justify-content-center mt-5">
       <Col md="11" sm="11" className="mb-1">

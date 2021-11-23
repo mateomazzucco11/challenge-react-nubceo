@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router'
+
 import { useForm } from '../../hooks/useForm'
 
 export const LoginScreen = () => {
   const navigate = useNavigate()
   const [ error, setError ] = useState()
+
   const initialForm = {
     email: "",
     password: "",
@@ -18,7 +20,7 @@ export const LoginScreen = () => {
     if( values.email === "challengereact@nubceo.com" && values.password === "react1234" ) {
       setError()
       localStorage.setItem("access_token", "321sfasd34213s2123afs2")
-      setTimeout(()=>{navigate("/")}, 500)
+      setTimeout(()=>{ navigate("/") }, 500)
       return
     } else {
       setError("The email or password entered is incorrect")

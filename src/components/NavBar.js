@@ -51,7 +51,7 @@ export const NavBar = ({ genre, setGenreFind, setSearchForNameArtist, setSearchF
           >
             <Dropdown.Item eventKey="default">All genres</Dropdown.Item>
             {
-              genre.map((element, key) => {
+              genre?.map((element, key) => {
                 return (
                     <Dropdown.Item eventKey={element.code} key={key}>{element.name}</Dropdown.Item>
                 )

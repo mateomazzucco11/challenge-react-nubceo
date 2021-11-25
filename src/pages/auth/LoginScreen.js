@@ -29,27 +29,44 @@ export const LoginScreen = () => {
   }
 
   return (
-    <form>
-      <input 
-        type="email"
-        placeholder="test@gmail.com"
-        name="email"
-        value={values.email}
-        onChange={handleInputChange}
-      />
-      <input 
-        type="password"
-        placeholder="******"
-        name="password"
-        value={values.password}
-        onChange={handleInputChange}
-      />
-      <button type="button" onClick={(e) => handleSubmit(e)}>Login</button>
-      {
-        error === undefined ? null : (
-          <h1>{error}</h1>
-        )
-      }
-    </form>
+    <div className="auth-wrapper">
+      <div className="auth-inner">
+        <form>
+          <h3>Login</h3>
+
+          <div className="form-group">
+            <label>Email</label>
+            <input 
+              type="email"
+              placeholder="test@gmail.com"
+              name="email"
+              value={values.email}
+              onChange={handleInputChange}
+              className="form-control"
+            />
+          </div>
+
+          <div className="form-group">
+            <label>Password</label>
+            <input 
+              type="password"
+              placeholder="******"
+              name="password"
+              value={values.password}
+              onChange={handleInputChange}
+              className="form-control"
+            />
+          </div>
+
+          <button type="button" onClick={(e) => handleSubmit(e)}>Login</button>
+          {
+            error === undefined ? null : (
+              <h1>{error}</h1>
+            )
+          }
+          
+        </form>
+      </div>
+    </div>
   )
 }

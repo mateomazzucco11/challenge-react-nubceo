@@ -66,7 +66,7 @@ export const BandsScreen = () => {
                 <Row>
                   {
                     (dataRecivedSearch?.length >= 1)? (
-                      dataRecivedSearch.map(element => {
+                      dataRecivedSearch?.map(element => {
                         return (
                           <Col md="6" sm="6" className="mb-1 container" key={element.id}>
                             <div className="row">
@@ -85,7 +85,7 @@ export const BandsScreen = () => {
                             </Col>
                           )
                       })):(
-                        dataBands.map(element => {
+                        dataBands?.map(element => {
                           return (
                             <Col md="6" sm="6" className="mb-1 container" key={element.id}>
                               <div className="row">
